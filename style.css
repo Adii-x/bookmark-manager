@@ -5,13 +5,17 @@
   padding: 0;
 }
 
+body {
+  background-color: #e07a5f;
+}
+
 .heading {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #2d2d2d;
   height: 9vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .heading h1 {
@@ -22,9 +26,8 @@
 }
 
 .bg {
-  height: 91vh;
-  width: 100vw;
-  background-color: #e07a5f;
+  height: 100%;
+  width: 100%;
 }
 
 .sec1 {
@@ -50,32 +53,33 @@
 
 .icon-bar {
   height: 25vh;
-  margin: 0px 25px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 65px;
 }
 
 .icon {
   height: 100px;
   width: 100px;
-  border: 2px solid black;
   border-radius: 100%;
+  box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.3),
+    6px 6px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease;
 }
 
 .icon:hover {
-  transform: scale(1.25); 
+  transform: scale(1.25);
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
-  background: #f9fafb; 
+  background: #f9fafb;
 }
 
 .icon:active {
   transform: scale(0.95);
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 }
-
 
 .icon a img {
   height: 100px;
@@ -97,4 +101,76 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+.sec2 {
+  position: relative;
+  width: 90%;
+  top: 30px;
+  margin: 0px 55px;
+  height: 100%;
+}
+
+.head2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.head2 h2 {
+  font-size: 45px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+
+.line1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.line2 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.box_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.cards {
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+  background-color: #f9fafb;
+  box-shadow: inset 0px 0px 8px rgba(255, 255, 255, 0.3),
+    6px 6px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease;
+}
+
+.cards:hover {
+  transform: scale(1.25);
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.cards:active {
+  transform: scale(0.95);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.box_card p {
+  font-family: poppins, sans-serif;
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
 }
