@@ -62,7 +62,20 @@
   width: 100px;
   border: 2px solid black;
   border-radius: 100%;
+  transition: all 0.2s ease;
 }
+
+.icon:hover {
+  transform: scale(1.25); 
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+  background: #f9fafb; 
+}
+
+.icon:active {
+  transform: scale(0.95);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
 
 .icon a img {
   height: 100px;
